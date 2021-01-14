@@ -2,37 +2,35 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types';
+import Big from 'big.js';
+
+
 
 const Items = (props) => {
-  return <h1>Current Quantity of Items in Cart: {props.quantity}</h1>
+  return <h1>number: {props.quantity}</h1>
 };
 
 Items.propTypes = {
-  quantity: PropTypes.number.isRequired
+  quantity: PropTypes.number.isRequired,
 };
-
 Items.defaultProps = {
   quantity: 0
 };
 
-class ShoppingCart extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+class Calculator extends React.Component {
+  
+
   render() {
-    return <Items quantity={10} />
+    const a = Big(1.2).mul(2);
+    return <Items quantity={`${a}`}/>
   }
 };
 
 
 class App extends React.Component {
-    constructor(props) {
-      super(props);
-    }
-
     render(){
-        return <div>Hello World 
-          <ShoppingCart/>
+        return <div> 
+          <Calculator/>
         </div>
     }
 }
