@@ -1,38 +1,33 @@
-
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import Big from 'big.js';
 
-
-
-const Items = (props) => {
-  return <h1>number: {props.quantity}</h1>
+const Items = props => {
+  const { quantity } = props;
+  return (
+    <h1>
+      number:
+      { quantity }
+    </h1>
+  );
 };
 
 Items.propTypes = {
-  quantity: PropTypes.number.isRequired,
+  quantity: PropTypes.number,
+
 };
+
 Items.defaultProps = {
-  quantity: 0
+  quantity: 0,
+
 };
 
-class Calculator extends React.Component {
-  
-
+export default class App extends React.PureComponent {
   render() {
     const a = Big(1.2).mul(2);
-    return <Items quantity={`${a}`}/>
+    return <Items quantity={`${a}`} />;
   }
-};
-
-
-class App extends React.Component {
-    render(){
-        return <div> 
-          <Calculator/>
-        </div>
-    }
 }
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById('root'));
