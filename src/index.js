@@ -2,11 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import Big from 'big.js';
+import './styles.css';
 
 const Items = props => {
   const { quantity } = props;
   return (
-    <h1>
+    <h1 className="text-gray">
       number:
       { quantity }
     </h1>
