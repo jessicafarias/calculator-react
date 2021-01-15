@@ -2,8 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Life Version
-[https://reverent-meninsky-b90f23.netlify.app] Click here!
+## Life Version 
+[https://calculator-jess.herokuapp.com/] Click here!
 
 ## Available Scripts
 
