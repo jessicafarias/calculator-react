@@ -1,34 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import PropTypes from 'prop-types';
-import Big from 'big.js';
+// import Big from 'big.js';
 import './styles.css';
+import App from './components/App';
 
-const Items = props => {
-  const { quantity } = props;
-  return (
-    <h1 className="text-gray">
-      number:
-      { quantity }
-    </h1>
-  );
-};
-
-Items.propTypes = {
-  quantity: PropTypes.number,
-
-};
-
-Items.defaultProps = {
-  quantity: 0,
-
-};
-
-export default class App extends React.PureComponent {
+export default class Index extends React.PureComponent {
   render() {
-    const a = Big(1.2).mul(2);
-    return <Items quantity={`${a}`} />;
+    // const a = Big(1.2).mul(2);
+    // return <Items quantity={`${a}`} />;
+    return <App />;
   }
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Index />, document.getElementById('root'));
