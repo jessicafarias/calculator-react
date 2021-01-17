@@ -1,27 +1,13 @@
-import React, { Component } from 'react';
-import Button from './Button';
+import React, { PureComponent } from 'react';
 import Display from './Display';
+import ButtonPanel from './ButtonPanel';
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      counter: 0,
-    };
-  }
-
+class App extends PureComponent {
   render() {
-    const { counter } = this.state;
     return (
       <div>
-        <h2>
-          State counter :
-          {counter}
-        </h2>
-        <div>
-          <Button name="C" />
-          <Display />
-        </div>
+        <Display />
+        <ButtonPanel />
       </div>
     );
   }
