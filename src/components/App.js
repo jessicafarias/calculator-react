@@ -5,10 +5,10 @@ import ButtonPanel from './ButtonPanel';
 class App extends PureComponent {
   render() {
     return (
-      <div>
+      <>
         <Display />
         <ButtonPanel />
-      </div>
+      </>
     );
   }
 }
