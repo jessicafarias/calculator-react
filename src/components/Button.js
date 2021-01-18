@@ -1,13 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Button(props) {
-  const { name } = props;
+function Button({ name }) {
   return (
     <div>
-      {name.map(number => (
-        <button key={number.toString()} type="button" className="btn-1">
-          {number}
+      {name.map(simbol => (
+        <button key={simbol.toString()} type="button" className="btn-1">
+          {simbol}
         </button>
       ))}
     </div>
