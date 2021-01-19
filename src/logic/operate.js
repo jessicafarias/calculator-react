@@ -13,6 +13,12 @@ const operate = (numberOne, numberTwo, operation) => {
     case '/':
       result = firstNumber.div(numberTwo);
       break;
+    case '%':
+      result = firstNumber.div(100).mul(numberTwo);
+      break;
+    case 'x':
+      result = firstNumber.div(numberTwo);
+      break;
     default:
       result = firstNumber;
   }
