@@ -1,23 +1,57 @@
-const calculate = (dataObject, simbol) => {
-  const { total } = dataObject;
-  const { next } = dataObject;
-  let { operation } = dataObject;
+import operate from './operate';
 
-  switch (simbol) {
-    case '+/-':
-      operation = total * (-1);
-      break;
-    case '-':
-      operation = total - next;
-      break;
-    case '+':
-      operation = total + next;
-      break;
-    default:
-      operation = total / next;
-      break;
+const calculate = (dataObject, symbol) => {
+  const { total, next, operation } = dataObject;
+
+  if (symbol === 'AC') {
+    return {
+      total: null,
+      next: null,
+      operation: null,
+    };
   }
-  return operation;
+  if (symbol === '+') {
+    return {
+      total: '',
+      next: null,
+      operation: `${total} +`,
+    };
+  }
+  if (symbol === '-') {
+    return {
+      total: null,
+      next: null,
+      operation: `${total} -`,
+    };
+  }
+  if (symbol === '/') {
+    return {
+      total: null,
+      next: null,
+      operation: `${total} /`,
+    };
+  }
+  if (symbol === '%') {
+    return {
+      total: null,
+      next: null,
+      operation: `${total} %`,
+    };
+  }
+
+  if (symbol === '=') {
+    return {
+      total: operate(total, next),
+      next: null,
+      operation: null,
+    };
+  }
+
+  return {
+    total: null,
+    next: operation,
+    operation: null,
+  };
 };
 
 export default calculate;
