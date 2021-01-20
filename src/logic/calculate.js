@@ -10,28 +10,28 @@ const calculate = (dataObject, symbol) => {
       operation: null,
     };
   }
-  if (symbol === '+') {
+  else if (symbol === '+') {
     return {
       total: '',
       next: null,
       operation: `${total} +`,
     };
   }
-  if (symbol === '-') {
+  else if (symbol === '-') {
     return {
       total: null,
       next: null,
       operation: `${total} -`,
     };
   }
-  if (symbol === '/') {
+  else if (symbol === '/') {
     return {
       total: null,
       next: null,
       operation: `${total} /`,
     };
   }
-  if (symbol === '%') {
+  else if (symbol === '%') {
     return {
       total: null,
       next: null,
@@ -39,7 +39,7 @@ const calculate = (dataObject, symbol) => {
     };
   }
 
-  if (symbol === '=') {
+  else if (symbol === '=') {
     return {
       total: operate(total, next),
       next: null,
@@ -47,11 +47,13 @@ const calculate = (dataObject, symbol) => {
     };
   }
 
-  return {
-    total: null,
-    next: operation,
-    operation: null,
-  };
+  else {
+    return {
+      total: null,
+      next: operation,
+      operation: null,
+    };
+  }
 };
 
 export default calculate;
