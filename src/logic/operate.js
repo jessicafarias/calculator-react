@@ -18,7 +18,7 @@ const operate = (numberOne, numberTwo, operation) => {
       result = firstNumber.div(100).mul(secondNumber);
       break;
     case 'x':
-      result = null;
+      result = firstNumber.mul(secondNumber);
       break;
     default:
       result = firstNumber;
