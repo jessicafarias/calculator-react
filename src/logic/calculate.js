@@ -13,7 +13,7 @@ const calculate = (dataObject, symbol) => {
 
   if (symbol === '+') {
     return {
-      total: '',
+      total: `${total} +`,
       next: null,
       operation: `${total} +`,
     };
