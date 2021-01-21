@@ -38,8 +38,8 @@ const calculate = (dataObject, symbol) => {
 
   if (symbol === '/') {
     return {
-      total: '0',
-      next: `${total}`,
+      total: next,
+      next: operate(total, next, symbol),
       operation: '/',
     };
   }
@@ -47,7 +47,7 @@ const calculate = (dataObject, symbol) => {
   if (symbol === '%') {
     return {
       total: '0',
-      next: `${total}`,
+      next: operate(total, next, symbol),
       operation: '%',
     };
   }

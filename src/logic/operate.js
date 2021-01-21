@@ -14,10 +14,10 @@ const operate = (next, total, operation) => {
       result = firstNumber.minus(secondNumber);
       break;
     case '/':
-      result = firstNumber.div(secondNumber);
+      result = firstNumber.div(multiply);
       break;
     case '%':
-      result = firstNumber.div(100).mul(secondNumber);
+      result = secondNumber.div(100).mul(firstNumber);
       break;
     case 'X':
       result = firstNumber.mul(multiply);
