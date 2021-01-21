@@ -20,10 +20,10 @@ class ButtonPanel extends React.PureComponent {
       <div className="calculator-base">
         <>
           <Button click={clickHandler} name={['AC', '+/-', '%', '/']} />
-          <Button name={['7', '8', '9', 'X']} />
-          <Button name={['4', '5', '6', '-']} />
-          <Button name={['1', '2', '3', '+']} />
-          <Button name={['0', '.', '=']} />
+          <Button click={clickHandler} name={['7', '8', '9', 'X']} />
+          <Button click={clickHandler} name={['4', '5', '6', '-']} />
+          <Button click={clickHandler} name={['1', '2', '3', '+']} />
+          <Button click={clickHandler} name={['0', '.', '=']} />
         </>
       </div>
     );

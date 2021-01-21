@@ -13,8 +13,8 @@ class App extends Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick= () => {
-    const result = calculate(this.state, '+');
+  handleClick= btnName => {
+    const result = calculate(this.state, btnName);
     this.setState(result);
   }
 

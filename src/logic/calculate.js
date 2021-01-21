@@ -60,7 +60,7 @@ const calculate = (dataObject, symbol) => {
   }
 
   return {
-    total: null,
+    total: `${total}${symbol}`,
     next: operation,
     operation: null,
   };
