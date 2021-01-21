@@ -5,64 +5,62 @@ const calculate = (dataObject, symbol) => {
 
   if (symbol === 'AC') {
     return {
-      total: null,
-      next: null,
-      operation: null,
+      total: '0',
+      next: '0',
+      operation: '',
     };
   }
 
   if (symbol === '+') {
     return {
-      total: `${total} +`,
-      next: null,
-      operation: `${total} +`,
+      total: operate(next, total, symbol),
+      next: '0',
+      operation: '+',
     };
   }
 
   if (symbol === '-') {
     return {
-      total: null,
-      next: null,
-      operation: `${total} -`,
+      total: operate(next, total, symbol),
+      next: '0',
+      operation: '-',
     };
   }
 
   if (symbol === '/') {
     return {
-      total: null,
-      next: null,
-      operation: `${total} /`,
+      total: '0',
+      next: `${total}`,
+      operation: '/',
     };
   }
 
   if (symbol === '%') {
     return {
-      total: null,
-      next: null,
-      operation: `${total} %`,
+      total: '0',
+      next: `${total}`,
+      operation: '%',
     };
   }
 
   if (symbol === '=') {
     return {
-      total: operate(total, next, symbol),
-      next: null,
+      total: operate(total, next, operation),
+      next: operate(total, next, operation),
       operation: null,
     };
   }
 
   if (symbol === '+/-') {
     return {
-      total: total * (-1),
-      next: next * (-1),
-      operation: null,
+      total: `-${total}`, // operacion para invertir signos
+      next: null,
+      operation,
     };
   }
 
   return {
-    total: `${total}${symbol}`,
-    next: operation,
-    operation: null,
+    next: `${next}${symbol}`,
   };
 };
 

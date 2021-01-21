@@ -5,7 +5,6 @@ const Display = props => {
   const { result } = props;
   return (
     <h1 className="text-gray">
-      result:
       { result }
     </h1>
   );
