@@ -12,6 +12,14 @@ const calculate = (dataObject, symbol) => {
     };
   }
 
+  if (symbol === 'X') {
+    return {
+      total: operate(next, total, symbol),
+      next: '0',
+      operation: 'X',
+    };
+  }
+
   if (symbol === '+') {
     return {
       total: operate(next, total, symbol),
