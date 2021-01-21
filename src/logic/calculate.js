@@ -1,3 +1,4 @@
+import Big from 'big.js';
 import operate from './operate';
 
 const calculate = (dataObject, symbol) => {
@@ -57,7 +58,7 @@ const calculate = (dataObject, symbol) => {
   }
 
   return {
-    next: `${next}${symbol}`,
+    next: new Big(`${next}${symbol}`),
   };
 };
 
