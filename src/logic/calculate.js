@@ -46,15 +46,12 @@ const calculate = (dataObject, symbol) => {
   if (symbol === '=') {
     return {
       total: operate(total, next, operation),
-      next: operate(total, next, operation),
-      operation: null,
     };
   }
 
   if (symbol === '+/-') {
     return {
-      total: `-${total}`, // operacion para invertir signos
-      next: null,
+      next: `${next * (-1)}`,
       operation,
     };
   }
