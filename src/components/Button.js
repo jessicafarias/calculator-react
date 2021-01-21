@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Button({ name }) {
+function Button({ name, click }) {
   return (
     <div>
       {name.map(simbol => (
-        <button key={simbol.toString()} type="button" className="btn-1">
+        <button onClick={click} key={simbol.toString()} type="button" className="btn-1">
           {simbol}
         </button>
       ))}
@@ -15,6 +15,7 @@ function Button({ name }) {
 
 Button.propTypes = {
   name: PropTypes.string.isRequired,
+  click: PropTypes.func.isRequired,
 
 };
 
