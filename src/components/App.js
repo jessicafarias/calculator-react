@@ -24,7 +24,8 @@ class App extends Component {
     const { total, operation, next } = this.state;
     return (
       <>
-        <Display result={`n:${next} ${operation} t:${total}`} />
+        <Display result={`${total}${operation}`} />
+        <Display result={`${next}`} />
         <ButtonPanel clickHandler={this.handleClick} />
       </>
     );
