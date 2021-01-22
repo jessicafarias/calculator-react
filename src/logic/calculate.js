@@ -49,7 +49,7 @@ const calculate = (dataObject, symbol) => {
   }
   if (symbol === '=') {
     return {
-      next: operate(total, next, operation),
+      next: operate(next, total, operation),
       total: '0',
       operation: '+',
     };
