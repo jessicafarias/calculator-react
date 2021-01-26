@@ -1,8 +1,8 @@
 import Big from 'big.js';
 
 const operate = (next, total, operation) => {
-  const firstNumber = new Big(next);
-  const secondNumber = total !== null ? new Big(total) : '0';
+  const firstNumber = next !== null ? new Big(next) : new Big('0');
+  const secondNumber = total !== null ? new Big(total) : new Big('0');
   const multiply = secondNumber === '0' ? 1 : secondNumber;
 
   let result = 0;
@@ -17,8 +17,13 @@ const operate = (next, total, operation) => {
       result = firstNumber.div(multiply);
       break;
     case '%':
-      result = firstNumber.div(100).mul(secondNumber);
-      break;
+      if (next === null) {
+        result = secondNumber.div(100);
+        break;
+      } else {
+        result = secondNumber.div(100).mul(firstNumber);
+        break;
+      }
     case 'X':
       result = firstNumber.mul(multiply);
       break;

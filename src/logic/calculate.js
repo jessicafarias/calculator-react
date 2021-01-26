@@ -17,16 +17,16 @@ const calculate = (dataObject, symbol) => {
 
   if (symbol === '/') {
     return {
-      total: next,
-      next: `${operate(next, total, operation)}`,
+      total: `${operate(next, total, operation)}`,
       operation: '/',
+      next: '',
     };
   }
 
   if (symbol === '%') {
     return {
-      total: '0',
-      next: `${operate(next, total, operation)}`,
+      total: `${operate(next, total, operation)}`,
+      next: null,
       operation: '%',
     };
   }
