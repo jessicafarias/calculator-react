@@ -1,16 +1,15 @@
-import Big from 'big.js';
 import operate from './operate';
 
 const calculate = (dataObject, symbol) => {
   const { total, next, operation } = dataObject;
 
   if (symbol === 'AC') {
-    return { total: '0', next: '0', operation: '' };
+    return { total: null, next: null, operation: null };
   }
 
   if (symbol === 'X') {
     return {
-      total: operate(next, total, operation),
+      total: `${operate(next, total, operation)}`,
       next: '0',
       operation: 'X',
     };
@@ -19,7 +18,7 @@ const calculate = (dataObject, symbol) => {
   if (symbol === '/') {
     return {
       total: next,
-      next: operate(total, next, operation),
+      next: `${operate(next, total, operation)}`,
       operation: '/',
     };
   }
@@ -27,14 +26,14 @@ const calculate = (dataObject, symbol) => {
   if (symbol === '%') {
     return {
       total: '0',
-      next: operate(total, next, operation),
+      next: `${operate(next, total, operation)}`,
       operation: '%',
     };
   }
 
   if (symbol === '+') {
     return {
-      total: operate(next, total, operation),
+      total: `${operate(next, total, operation)}`,
       next: '0',
       operation: '+',
     };
@@ -42,16 +41,15 @@ const calculate = (dataObject, symbol) => {
 
   if (symbol === '-') {
     return {
-      total: operate(next, total, operation),
+      total: `${operate(next, total, operation)}`,
       next: '0',
       operation: '-',
     };
   }
   if (symbol === '=') {
     return {
-      next: operate(next, total, operation),
-      total: '0',
-      operation: '+',
+      next: `${operate(next, total, operation)}`,
+      operation: '=',
     };
   }
 
@@ -61,10 +59,13 @@ const calculate = (dataObject, symbol) => {
     };
   }
 
-  return {
-    next: new Big(`${next}${symbol}`),
-    total: new Big(`${total}`),
-  };
+  if (next === null) {
+    return {
+      next: parseFloat(`${symbol}`, 10),
+    };
+  }
+
+  return { next: parseFloat(`${next}${symbol}`, 10), operation };
 };
 
 export default calculate;
