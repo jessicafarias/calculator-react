@@ -50,22 +50,27 @@ const calculate = (dataObject, symbol) => {
     return {
       next: `${operate(next, total, operation)}`,
       operation: '=',
+      total,
     };
   }
 
   if (symbol === '+/-') {
     return {
       next: `${next * (-1)}`,
+      operation,
+      total,
     };
   }
 
   if (next === null) {
     return {
       next: parseFloat(`${symbol}`, 10),
+      operation,
+      total,
     };
   }
 
-  return { next: parseFloat(`${next}${symbol}`, 10), operation };
+  return { next: parseFloat(`${next}${symbol}`, 10), operation, total };
 };
 
 export default calculate;

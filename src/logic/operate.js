@@ -14,7 +14,7 @@ const operate = (next, total, operation) => {
       result = secondNumber.minus(firstNumber);
       break;
     case '/':
-      result = firstNumber.div(multiply);
+      result = multiply.div(firstNumber);
       break;
     case '%':
       if (next === null) {
