@@ -1,0 +1,23 @@
+.text-gray {
+  color: rgb(104, 104, 104);
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 15px;
+  margin: auto;
+  max-width: 795px;
+  text-align: end;
+  padding: 5px;
+}
+
+.btn-1 {
+  width: 25%;
+  height: 16vh;
+}
+
+.btn-2 {
+  width: 50%;
+}
+
+.calculator-base {
+  margin: auto;
+  max-width: 800px;
+}
