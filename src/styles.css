@@ -1,23 +1,48 @@
 .text-gray {
-  color: rgb(104, 104, 104);
   border: 1px solid rgb(190, 190, 190);
-  border-radius: 15px;
   margin: auto;
-  max-width: 795px;
   text-align: end;
-  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #858694;
+  color: white; 
+  font-weight: bold;
 }
 
-.btn-1 {
-  width: 25%;
+.text-gray h1 {
+  padding: 10px;
+}
+
+.btn1 {
   height: 16vh;
+  border: 2px solid #BABABA;
+  width: 25%;
 }
 
-.btn-2 {
+.btn2 {
+  width: 50%;
+  height: 16vh;
+  border: 2px solid #BABABA;
   width: 50%;
 }
 
-.calculator-base {
-  margin: auto;
-  max-width: 800px;
+.bgc{
+  background-color: blueviolet;
 }
+
+.gray {
+  background-color: #E0E0E0;
+}
+
+.orange {
+  background-color: #F5913E;
+}
+
+.calculator-base {
+  width: 700px;
+  margin: auto;
+}
+
+
+

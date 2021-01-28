@@ -14,12 +14,14 @@ const Display = props => {
   }
 
   return (
-    <h1 className="text-gray">
-      { total }
-      { operation }
-      { result }
+    <div className="text-gray">
+      <h1>
+        { total }
+        { operation }
+        { result }
 
-    </h1>
+      </h1>
+    </div>
   );
 };
 
