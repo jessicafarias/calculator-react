@@ -1,46 +1,30 @@
 import React from 'react';
 import PropTypes, { string } from 'prop-types';
 
-function Button({ name, click }) {
-  const getClass = someInput => {
-    switch (someInput) {
-      case '0': {
-        return 'btn2 gray';
-      }
-      case '+': {
-        return 'btn1 orange';
-      }
-      case '-': {
-        return 'btn1 orange';
-      }
-      case '/': {
-        return 'btn1 orange';
-      }
-      case 'X': {
-        return 'btn1 orange';
-      }
-      case '=': {
-        return 'btn1 orange';
-      }
-      default: {
-        return 'btn1 gray';
-      }
-    }
-  };
-  return (
-    <div className="buttons">
-      {name.map(simbol => (
-        <button onClick={() => click(simbol)} key={simbol.toString()} type="button" className={getClass(simbol)}>
-          {simbol}
-        </button>
-      ))}
-    </div>
-  );
-}
+const Button = ({
+  name, click, wide, color,
+}) => (
+  <button
+    style={{ width: wide ? '50%' : '25%', backgroundColor: color }}
+    onClick={() => click(name)}
+    key={name.toString()}
+    type="button"
+  >
+    {name}
+  </button>
+);
 
 Button.propTypes = {
   name: PropTypes.arrayOf(string).isRequired,
   click: PropTypes.func.isRequired,
+  wide: PropTypes.bool,
+  color: PropTypes.string,
+
+};
+
+Button.defaultProps = {
+  color: '#F5913E',
+  wide: false,
 
 };
 

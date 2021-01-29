@@ -26,7 +26,7 @@ const Display = props => {
 };
 
 Display.propTypes = {
-  result: PropTypes.string,
+  result: PropTypes.number,
   operation: PropTypes.string,
   total: PropTypes.string,
 

@@ -14,23 +14,6 @@
   padding: 10px;
 }
 
-.btn1 {
-  height: 16vh;
-  border: 2px solid #BABABA;
-  width: 25%;
-}
-
-.btn2 {
-  width: 50%;
-  height: 16vh;
-  border: 2px solid #BABABA;
-  width: 50%;
-}
-
-.bgc{
-  background-color: blueviolet;
-}
-
 .gray {
   background-color: #E0E0E0;
 }
@@ -44,5 +27,17 @@
   margin: auto;
 }
 
+
+.row-button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.resize{
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+}
 
 
