@@ -6,9 +6,11 @@ import App from './components/App';
 import Home from './components/Home';
 import Quote from './components/Quote';
 import Calculator from './components/Calculator';
+import Navbar from './components/Navbar';
 
 const Routes = () => (
   <BrowserRouter>
+    <Navbar />
     <Switch>
       <Route exact path="/" component={App} />
       <Route path="/home" component={Home} />

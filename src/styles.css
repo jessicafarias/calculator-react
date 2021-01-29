@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;900&display=swap');
+
 .text-gray {
   border: 1px solid rgb(190, 190, 190);
   margin: auto;
@@ -27,7 +29,6 @@
   margin: auto;
 }
 
-
 .row-button{
   display: flex;
   flex-direction: row;
@@ -40,4 +41,32 @@
   height: 100px;
 }
 
+/* NAVBAR */
 
+.bg-black{
+  background-color: rgba(0, 0, 0, 0.904);
+  font-family: 'Raleway', sans-serif;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.regular {
+  font-weight: 600;
+  font-size: medium;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.navbar {
+  height: 20vh;
+  background-image: url('images/math.jpg');
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  max-width: 1200px;
+  justify-content: space-around;
+  flex-direction: row;
+}
