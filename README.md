@@ -15,10 +15,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     
   <p align="center">
 <a align="center" href="https://github.com/jessicafarias/calculator-react">
-    <img src="./public/screenshot2.png" alt="Logo" width="50%" height="auto"/>
+    <img src="./public/screenshot2.png" alt="Logo" width="60%" height="auto"/>
   </a>
   <a  href="https://github.com/jessicafarias/calculator-react">
-    <img src="./public/screenshot1.png" alt="Logo" width="50%" height="auto"/>
+    <img src="./public/screenshot1.png" alt="Logo" width="60%" height="auto"/>
   </a>
 </p>
 
@@ -54,15 +54,15 @@ To get a local copy up and running follow these simple example steps.
 * Clone this repo:
   - Clone with SSH:
   ```
-    git@github.com:jamezjaz/React_Calculator.git
+    git@github.com:jessicafarias/React_Calculator.git
   ```
   - Clone with HTTPS
   ```
-    https://github.com/jamezjaz/React_Calculator.git
+    https://github.com/jessicafarias/calculator-react.git
   ```
   - Clone with GitHub CLI
   ```
-    gh repo clone jamezjaz/React_Calculator
+    gh repo clone jessicafarias/calculator-react
     
  - cd to React_Calculator
 
