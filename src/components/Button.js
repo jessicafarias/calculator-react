@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes, { string } from 'prop-types';
+import PropTypes from 'prop-types';
 
 const Button = ({
   name, click, wide, color,
@@ -25,7 +25,7 @@ Button.propTypes = {
 Button.defaultProps = {
   color: '#F5913E',
   wide: false,
-  click: ()=>{},
+  click: () => {},
 
 };
 

@@ -1,8 +1,8 @@
 import { BrowserRouter } from 'react-router-dom';
 import React from 'react';
 import '@testing-library/jest-dom';
-import Home from '../Home';
 import TestRenderer from 'react-test-renderer'; // ES6
+import Home from '../Home';
 
 describe('Display Home page', () => {
   it('renders correctly', () => {

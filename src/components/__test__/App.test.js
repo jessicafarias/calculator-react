@@ -1,8 +1,8 @@
 import { BrowserRouter } from 'react-router-dom';
 import React from 'react';
 import '@testing-library/jest-dom';
-import App from '../App';
 import TestRenderer from 'react-test-renderer'; // ES6
+import App from '../App';
 
 describe('Display App.js', () => {
   it('renders correctly', () => {
