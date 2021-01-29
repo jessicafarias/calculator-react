@@ -1,5 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;900&display=swap');
 
+*{
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+}
+a:hover{
+  color: #F5913E;
+}
+
+.calculator-text{
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
 .text-gray {
   border: 1px solid rgb(190, 190, 190);
   margin: auto;
@@ -45,14 +63,15 @@
 
 .bg-black{
   background-color: rgba(0, 0, 0, 0.904);
-  font-family: 'Raleway', sans-serif;
   color: #ffffff;
   padding: 10px;
+  margin: auto;
 }
 
 .regular {
   font-weight: 600;
   font-size: medium;
+  padding: 5px;
 }
 
 .bold {
@@ -60,13 +79,54 @@
 }
 
 .navbar {
-  height: 20vh;
-  background-image: url('images/math.jpg');
+  min-height: 20vh;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   padding: 10px;
-  max-width: 1200px;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row;
 }
+
+.bg-image1{
+  background-image: url('images/math.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+.bg-image2{
+  background-image: url('images/think.jpg');
+  background-size: cover;
+  background-position: center center;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-center{
+  background-color: wheat;
+  padding: 10px;
+  text-align: center;
+  max-width: 400px;
+}
+
+.bg-image3{
+  background-image: url('images/watching.jpg');
+  background-size: cover;
+  background-position: center center;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mt-2{
+ margin-top: 10px;
+}
+
+.black{
+  background-color: rgba(0, 0, 0, 0.603);
+  width: 100%;
+  height: 100%;
+}
+
