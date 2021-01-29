@@ -15,8 +15,8 @@ const Button = ({
 );
 
 Button.propTypes = {
-  name: PropTypes.arrayOf(string).isRequired,
-  click: PropTypes.func.isRequired,
+  name: PropTypes.string.isRequired,
+  click: PropTypes.func,
   wide: PropTypes.bool,
   color: PropTypes.string,
 
@@ -25,6 +25,7 @@ Button.propTypes = {
 Button.defaultProps = {
   color: '#F5913E',
   wide: false,
+  click: ()=>{},
 
 };
 
