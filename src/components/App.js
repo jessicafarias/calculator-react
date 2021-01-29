@@ -17,10 +17,12 @@ const App = () => {
     setState(state => calculate(state, btnName));
   };
   return (
-    <>
-      <Display result={state.next} total={state.total} operation={state.operation} />
-      <ButtonPanel clickHandler={handleClick} />
-    </>
+    <div className="calculator-base">
+      <>
+        <Display result={state.next} total={state.total} operation={state.operation} />
+        <ButtonPanel clickHandler={handleClick} />
+      </>
+    </div>
   );
 };
 

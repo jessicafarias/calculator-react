@@ -1,23 +1,134 @@
-.text-gray {
-  color: rgb(104, 104, 104);
-  border: 1px solid rgb(190, 190, 190);
-  border-radius: 15px;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;900&display=swap');
+
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+a:hover {
+  color: #f5913e;
+}
+
+.calculator-text {
   margin: auto;
-  max-width: 795px;
+  text-align: center;
+  width: 100%;
+}
+
+.text-gray {
+  border: 1px solid rgb(190, 190, 190);
+  margin: auto;
   text-align: end;
-  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #858694;
+  color: white;
+  font-weight: bold;
 }
 
-.btn-1 {
-  width: 25%;
-  height: 16vh;
+.text-gray h1 {
+  padding: 10px;
 }
 
-.btn-2 {
-  width: 50%;
+.gray {
+  background-color: #e0e0e0;
+}
+
+.orange {
+  background-color: #f5913e;
 }
 
 .calculator-base {
+  width: 700px;
   margin: auto;
-  max-width: 800px;
+}
+
+.row-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.resize {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+}
+
+/* NAVBAR */
+
+.bg-black {
+  background-color: rgba(0, 0, 0, 0.904);
+  color: #fff;
+  padding: 10px;
+  margin: auto;
+}
+
+.regular {
+  font-weight: 600;
+  font-size: medium;
+  padding: 5px;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.navbar {
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.bg-image1 {
+  background-image: url('images/math.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.bg-image2 {
+  background-image: url('images/think.jpg');
+  background-size: cover;
+  background-position: center center;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-center {
+  background-color: wheat;
+  padding: 10px;
+  text-align: center;
+  max-width: 400px;
+}
+
+.bg-image3 {
+  background-image: url('images/watching.jpg');
+  background-size: cover;
+  background-position: center center;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mt-2 {
+  margin-top: 10px;
+}
+
+.black {
+  background-color: rgba(0, 0, 0, 0.603);
+  width: 100%;
+  height: 100%;
 }

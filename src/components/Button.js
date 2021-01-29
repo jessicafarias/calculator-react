@@ -1,21 +1,30 @@
 import React from 'react';
 import PropTypes, { string } from 'prop-types';
 
-function Button({ name, click }) {
-  return (
-    <div>
-      {name.map(simbol => (
-        <button onClick={() => click(simbol)} key={simbol.toString()} type="button" className="btn-1">
-          {simbol}
-        </button>
-      ))}
-    </div>
-  );
-}
+const Button = ({
+  name, click, wide, color,
+}) => (
+  <button
+    style={{ width: wide ? '50%' : '25%', backgroundColor: color }}
+    onClick={() => click(name)}
+    key={name.toString()}
+    type="button"
+  >
+    {name}
+  </button>
+);
 
 Button.propTypes = {
   name: PropTypes.arrayOf(string).isRequired,
   click: PropTypes.func.isRequired,
+  wide: PropTypes.bool,
+  color: PropTypes.string,
+
+};
+
+Button.defaultProps = {
+  color: '#F5913E',
+  wide: false,
 
 };
 

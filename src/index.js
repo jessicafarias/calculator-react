@@ -1,12 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles.css';
-import App from './components/App';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Home from './components/Home';
+import Quote from './components/Quote';
+import Calculator from './components/Calculator';
+import Navbar from './components/Navbar';
 
-export default class Index extends React.PureComponent {
-  render() {
-    return <App />;
-  }
-}
+const Routes = () => (
+  <BrowserRouter>
+    <Navbar />
+    <Switch>
+      <Route exact path="/" component={Home} />
+      <Route path="/home" component={Home} />
+      <Route path="/quote" component={Quote} />
+      <Route path="/calculator" component={Calculator} />
 
-ReactDOM.render(<Index />, document.getElementById('root'));
+    </Switch>
+  </BrowserRouter>
+);
+
+ReactDOM.render(<Routes />, document.getElementById('root'));
