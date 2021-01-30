@@ -1,56 +1,118 @@
-# Getting Started with Create React App (Milestone 1)
+# Math Magician
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Life Version 
- https://calculator-jess.herokuapp.com/
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
 
-## Available Scripts
+<!-- PROJECT LOGO -->
+  <h3 align="center">React Calculator</h3>
 
-In the project directory, you can run:
+  <p align="center">
+    This is a real world calculator designed with React, a JavaScript library for building user interfaces.<br /></p>
+    
+  <p align="center">
+<a align="center" href="https://github.com/jessicafarias/calculator-react">
+    <img src="./public/screenshot2.png" alt="Logo" width="60%" height="auto"/>
+  </a>
+  <a  href="https://github.com/jessicafarias/calculator-react">
+    <img src="./public/screenshot1.png" alt="Logo" width="60%" height="auto"/>
+  </a>
+</p>
 
-### `npm start`
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This is a real world standard calculator used for series of mathematical operations. It is designed with React, a JavaScript library for building user interfaces.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Live Demo
+It's deployed [here](https://calculator-jess.herokuapp.com/) on heroku
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
+### Built With
+This project was built using these technologies.
+* React
+* JavaScript
+* GitHub
+* Eslint
+* Stylelint
+* VScode
+* Jest
 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Getting Started
 
-### Code Splitting
+To get a local copy up and running follow these simple example steps.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Prerequisites
 
-### Analyzing the Bundle Size
+ * [Node.js](https://nodejs.org/) is required to install dependencies and run scripts via npm.
+ * A modern browser
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Clone
+* Clone this repo:
+  - Clone with SSH:
+  ```
+    git@github.com:jessicafarias/React_Calculator.git
+  ```
+  - Clone with HTTPS
+  ```
+    https://github.com/jessicafarias/calculator-react.git
+  ```
+  - Clone with GitHub CLI
+  ```
+    gh repo clone jessicafarias/calculator-react
+    
+ - cd to React_Calculator
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Setup
 
-### Advanced Configuration
+Install dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
+$ npm install
+```
 
-### Deployment
+Start the local webserver:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```$ npm start``` will open the calculator at local webserver at http://localhost:3000/ 
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Author
+
+👤 **Jessica Michelle Farías Rosado**
+
+## 📫 How to reach me:
+ [![Website](https://img.shields.io/badge/-Website-black?style=for-the-badge&logo=Julia&logoColor=white)](https://jessicafarias.github.io/)
+ [![LINKEDIN](https://img.shields.io/badge/-LINKEDIN-0077B5?style=for-the-badge&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/jessica-michelle-farias-rosado/)
+ [![EMAIL](https://img.shields.io/badge/-EMAIL-D14836?style=for-the-badge&logo=Mail.Ru&logoColor=white)](mailto:jessica.farias.rosado@gmail.com)
+ [![TWITTER](https://img.shields.io/badge/-TWITTER-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/FariasRosado)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/jessicafarias/calculator-react/issues).
+
+## Show your support
+
+Give a :star: if you like this project!
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/jessicafarias/calculator-react.svg?style=flat-square
+[contributors-url]: https://github.com/jessicafarias/calculator-react/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/jessicafarias/calculator-react.svg?style=flat-square
+[forks-url]: https://github.com/jessicafarias/calculator-react/network/members
+[stars-shield]: https://img.shields.io/github/stars/jessicafarias/calculator-react.svg?style=flat-square
+[stars-url]: https://github.com/jessicafarias/calculator-react/stargazers
+[issues-shield]: https://img.shields.io/github/issues/jessicafarias/calculator-react.svg?style=flat-square
+[issues-url]: https://github.com/jessicafarias/calculator-react/issues
+
+## 📝 License
+
+This project is [MIT](https://opensource.org/licenses/MIT) licensed.

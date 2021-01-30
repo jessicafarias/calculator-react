@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes, { string } from 'prop-types';
+import PropTypes from 'prop-types';
 
 const Button = ({
   name, click, wide, color,
@@ -15,8 +15,8 @@ const Button = ({
 );
 
 Button.propTypes = {
-  name: PropTypes.arrayOf(string).isRequired,
-  click: PropTypes.func.isRequired,
+  name: PropTypes.string.isRequired,
+  click: PropTypes.func,
   wide: PropTypes.bool,
   color: PropTypes.string,
 
@@ -25,6 +25,7 @@ Button.propTypes = {
 Button.defaultProps = {
   color: '#F5913E',
   wide: false,
+  click: () => {},
 
 };
 
